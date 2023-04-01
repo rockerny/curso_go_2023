@@ -19,10 +19,10 @@ func main() {
 	fmt.Println(base, altura, area)
 
 	// Zero values
-	var a int
-	var b float64
-	var c string
-	var d bool
+	var a int // El valor que toma por defecto en 0
+	var b float64 // El valor que toma por defecto en 0
+	var c string // El valor que toma por defecto en vacio, un espacio en blanco
+	var d bool // El valor que toma por defecto es false
 
 	fmt.Println(a, b, c, d)
 
