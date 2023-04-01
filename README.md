@@ -1,2 +1,5 @@
-# curso_go_2023
-Archivos de texto de las clases de Go en Platzi
+# CURSO GO LANG PLATZI
+
+Apuntes de las clases de** go** de platzi
+
+Estos apuntes lo hago para poder **repasar lo conocimientos impartidos por Osmandi Gómez, profesor de Platzi.**
