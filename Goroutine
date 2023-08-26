@@ -1,0 +1,32 @@
+package main
+
+import (
+	"fmt"
+	"sync"
+)
+
+func say(text string, wg *sync.WaitGroup) {
+
+	defer wg.Done()
+
+	fmt.Println(text)
+}
+
+func main() {
+	var wg sync.WaitGroup
+
+	fmt.Println("Hello")
+	wg.Add(1) //Agrego el WaitGroup
+
+	go say("world", &wg)
+	//Goroutine
+
+	go func(text string) {
+		fmt.Println(text)
+	}("Adios")
+	
+	wg.Wait()
+
+	//time.Sleep(time.Second * 1) //Agrega un segundo de tiempo para que pueda ejecutar el Goroutine
+	//No se recomienda
+}
